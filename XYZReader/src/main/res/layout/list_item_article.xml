@@ -1,0 +1,51 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    android:elevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.xyzreader.ui.DynamicHeightNetworkImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/article_title"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/article_list_title_padding"
+            android:paddingTop="@dimen/article_list_title_padding"
+            android:paddingRight="@dimen/article_list_title_padding"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:maxLines="4"
+            tools:text="Article Title" />
+
+        <TextView
+            android:id="@+id/article_byline"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/article_list_title_padding"
+            android:paddingRight="@dimen/article_list_title_padding"
+            android:paddingBottom="@dimen/article_list_title_padding"
+            android:textColor="@color/article_list_byline_color"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            tools:text="Article Byline" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
